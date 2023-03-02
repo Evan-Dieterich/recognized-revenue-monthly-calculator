@@ -3,7 +3,7 @@
 /* This script creates a working table that pulls monthly subscriptions from the payments table
 	extracts their state and zip from a metadata column using json_extract. There are cases where
 	state and zip metadata is null for several records - this is corrected below. Yearly subscriptions
-	are recognized monthly despite paying once per year, this is handled using a recursive cte below.
+	are recognized monthly despite being paid once per year, this is handled using a recursive cte below.
 	Finally, the two result sets are combined and aggregated by zip and month for schools in NY only.
 */
 
